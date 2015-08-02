@@ -37,7 +37,12 @@ body {
 .logo-img {
  width: 400px;
  height: 400px;
-
+}
+.social-links {
+  width: 20%;
+  margin-top: 15px;
+  margin-left: 42.5%;
+  margin-right: 42.5%;
 }
 .about-me {
   text-align: center;
@@ -48,5 +53,7 @@ body {
   margin-left: 10%;
   padding-left: 10px;
   padding-right: 10px;
+  padding-bottom: 5px;
   border-radius: 5px;
 }
+@media 
