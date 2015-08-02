@@ -1,4 +1,4 @@
 this["JST"] = this["JST"] || {};
 this["JST"]["application"] = Handlebars.template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
-    return "<div class=\"main-container\">\n  <img class=\"logo-img\" src=\"images/logo.png\" alt=\"\" />\n</div>\n";
+    return "<div class=\"outer\">\n  <img class=\"beneath\" src=\"images/rock.jpeg\" alt=\"\" />\n  <div class=\"main-container\">\n    <img class=\"logo-img\" src=\"images/logo.png\" alt=\"\" />\n  </div>\n  <div class=\"about-me\">\n    <h1>About Myself</h1>\n    <p>\n      Whereabouts, all over the place. Lancaster, SC, Greenville, SC, Winnsboro, SC, Kansas City, MO\n    </p>\n    <p>\n      I am able to freely go where I am needed all over the US. I am presently looking for opportunities in the following locations:\n      Colorado, Washington State, Florida, Greenville, New York City, and last but not least Austin, TX.\n    </p>\n  </div>\n</div>\n<footer>\n  <div class=\"social-links\">\n    <i class=\"fa fa-facebook-official fa-3\"></i>\n\n  </div>\n</footer>\n";
 },"useData":true});
