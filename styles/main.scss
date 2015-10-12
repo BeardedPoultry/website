@@ -18,9 +18,17 @@ body {
   font-family: $base-font-family;
   background-color: $base-background-color;
   color: $base-font-color;
-  @include outer-container;
   font-size: 1.2em;
 }
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration:underline; 
+  text-transform:capitalize; 
+  color:#000; 
+  overflow: auto;
+  }
 //CSS settings for mobile pages *****************************
 //***********************************************************
 @media all and (max-width: 360px) {
@@ -71,11 +79,44 @@ body {
  .equalizer {
    margin-left: 43%;
  }
+ .menu-items {
+  max-height: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  overflow: hidden;
+  color: white;
+  background-color: RGBA(95, 108, 117, 1);
+  transition: max-height 600ms ease-in-out;
+  z-index: 1;
+  font-size: 80%
+}
+.menu-li {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.is-active {
+  max-height: 500px;
+  padding-top: 25px;
+  height: 40px;
+}
+.toplink {
+  position: absolute;
+  z-index: 1;
+  left: 728px;
+  top: 460px;
+  width: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  font-size: 60%;
+  background-color: RGBA(95, 107, 117, 1);
+  color: lightgrey;
+}
  .about-me {
   text-align: center;
-  background-color: RGBA(230, 230, 230, .75);
+  background-color: RGBA(230, 230, 230, .45);
   width: 60%;
-  margin-top: 25px;
   margin-right: 20%;
   margin-left: 20%;
   padding-left: 10px;
@@ -88,14 +129,12 @@ body {
   margin-top: 0;
 }
 .main-container {
-  width: 450px;
-  height: 430px;
+  width: 20%;
   padding-right: 25px;
   padding-top: 45px;
   padding-left: 25px;
-  padding-bottom: 10px;
-  margin-left: 35%;
-  margin-right: 35%;
+  margin-left: 40%;
+  margin-right: 40%;
 }
 .social-links {
   margin-top: 20px;
