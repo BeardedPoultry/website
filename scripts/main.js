@@ -3,11 +3,18 @@
 
   $(document).ready(function(){
     $('body').prepend(JST.application());
-    $('.show-menu').on('click', function(e){
+    $('.show-portfolio').on('click', function(e){
     console.log("showmenu")
-  $('.menu-items').toggleClass('is-active');
+    $('.menu-portfolio').toggleClass('is-active');
     });
-  });
-  
+    $('.show-about').on('click', function(e){
+    console.log("showmenu")
+    $('.menu-about').toggleClass('is-active');
+    });
+    $('.show-contact').on('click', function(e){
+      console.log("showmenu")
+    $('.menu-contact').toggleClass('is-active');
+    });
+  })
   
 })();
