@@ -76,11 +76,13 @@ a:hover {
   //   padding: 3px;
   //   border-radius: 5px;
   // }
+}
   
-}@media all and (min-width: 365px) {
+@media all and (min-width: 1366px) {
   .logo-img {
     position: absolute;
     margin: auto;
+    background-repeat: none;
     left: 0; 
     right: 0;
     top: 0;
@@ -101,7 +103,7 @@ a:hover {
   overflow: hidden;
   color: $base-font-color;
   background-color: RGBA(95, 108, 117, .9);
-  transition: max-height 1000ms ease-in-out;
+  transition: max-height 300ms ease-in-out;
   z-index: 1;
   font-size: 80%;
   padding: 0;
@@ -119,8 +121,11 @@ a:hover {
   font-size: 80%;
   padding: 0;
 }
+.portfolio-caps {
+  height: 350px;
+}
 .is-active {
-  max-height: 700px;
+  max-height: 15000px;
   padding-top: 25px;
   padding-left: 20px;
   padding-right: 20px;
@@ -146,9 +151,11 @@ a:hover {
  }
  .close {
    background-color: RGBA(246, 246, 246, 0);
+   margin-left: 46%;
    padding-top: 20px;
    border-width: 0;
    border: 0;
+   display: block;
  }
  .dropdown-holder {
   text-align: center;
@@ -166,6 +173,12 @@ a:hover {
   padding-top: 5px;
   padding-bottom: 0;
   margin-bottom: 0;
+}
+.profile {
+  display: block;
+  max-width: 150px;
+  margin: 0 auto 30px;
+  border-radius: 100%;
 }
 i {
   text-decoration: none;
@@ -189,7 +202,7 @@ i {
   border-color: black;
   }
   footer {
-    position: absolute;
+    position: relative;
     top: 85%;
     left: 45%;
     right: 42%;
