@@ -6,7 +6,7 @@ $base-font-family: $helvetica;
 
 // Colors
 $blue: #477dca;
-$dark-gray: #333;
+$dark-gray: RGBA(246, 246, 246, 1);
 $medium-gray: #999;
 $light-gray: #ddd;
 $very-light-gray: #fafafa;
@@ -22,6 +22,7 @@ body {
 }
 a {
   text-decoration: none;
+  color: $dark-gray;
 }
 li {
   text-decoration: none;
@@ -30,8 +31,6 @@ ul {
   list-style-type: none;
 }
 a:hover {
-  text-decoration:underline; 
-  text-transform:capitalize; 
   color:#000; 
   overflow: auto;
   }
@@ -78,7 +77,7 @@ a:hover {
   //   border-radius: 5px;
   // }
   
-}@media all and (min-width: 361px) {
+}@media all and (min-width: 365px) {
   .logo-img {
     position: absolute;
     margin: auto;
@@ -100,9 +99,9 @@ a:hover {
   margin-bottom: 0;
   text-align: center;
   overflow: hidden;
-  color: white;
+  color: $base-font-color;
   background-color: RGBA(95, 108, 117, .9);
-  transition: max-height 500ms ease;
+  transition: max-height 1000ms ease-in-out;
   z-index: 1;
   font-size: 80%;
   padding: 0;
@@ -113,7 +112,7 @@ a:hover {
   margin-bottom: 0;
   text-align: center;
   overflow: hidden;
-  color: white;
+  color: $base-font-color;
   background-color: RGBA(95, 108, 117, .9);
   transition: max-height 500ms ease;
   z-index: 1;
@@ -121,31 +120,41 @@ a:hover {
   padding: 0;
 }
 .is-active {
-  max-height: 600px;
+  max-height: 700px;
   padding-top: 25px;
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 15px;
-  margin-left: 25%;
+  margin-left: 20%;
   margin-top: 100px;
   width: 60%;
+  transition: max-height 1000ms ease-in-out;
 }
 .toplink {
     margin-top: 30px;
     height: 40px;
     font-size: 20px;
-    color: RGBA(136, 145, 152, .8);
+    background-color: RGBA(21, 71, 83, 1);
+    color: $base-font-color;
     border-width: 0;
     border-radius: 6px;
     width: 33%;
-  }
-  .toplink:hover {
-    color:RGBA(238, 113, 23, 1);
+ }
+ .toplink:hover {
+    background-color: RGBA(57, 201, 237, 1);
     text-decoration: underline; 
-  }
+ }
+ .close {
+   background-color: RGBA(246, 246, 246, 0);
+   padding-top: 20px;
+   border-width: 0;
+   border: 0;
+ }
  .dropdown-holder {
   text-align: center;
   width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
   border-radius: 5px;
 }
 .beneath {
@@ -153,36 +162,31 @@ a:hover {
   position: fixed;
   margin-top: 0;
 }
-.social-links {
-  margin-top: 20px;
-}
 .myself {
   padding-top: 5px;
   padding-bottom: 0;
   margin-bottom: 0;
 }
-hr {
-  width: 80%;
-}
 i {
   text-decoration: none;
-  color: RGBA(51, 51, 51, 1);
+  color: RGBA(246, 246, 246, 1);
   margin-left: 2px;
   margin-right: 2px;
   width: 50px;
   height: 50px;
 }
 .resume-link {
-    text-decoration: none;
-    text-align: center;
-    height: 50px;
-    width: 250px;
-    margin-left: 42%;
-    margin-bottom: 100px;
-    color: RGBA(200, 201, 186, 1);
-    background-color: RGBA(51, 51, 51, 1);
-    padding-top: 15px;
-    border-radius: 5px;
+  margin-top: 20px;
+  text-decoration: none;
+  text-align: center;
+  height: 50px;
+  width: 250px;
+  color: RGBA(200, 201, 186, 1);
+  background-color: RGBA(51, 51, 51, 1);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  border-color: black;
   }
   footer {
     position: absolute;
