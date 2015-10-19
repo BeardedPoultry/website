@@ -9,6 +9,9 @@ require.register("main", function(exports, require, module){
 
     $('.show-portfolio').on('click', function (e) {
       $('.menu-portfolio').toggleClass('is-active');
+      $('#menu-portfolio').toggle('hide');
+      //   $('.is-active').easeInCubic({
+      // duration: 1000});
     });
 
     $('.show-about').on('click', function (e) {

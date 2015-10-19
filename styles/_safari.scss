@@ -1,0 +1,143 @@
+
+$blue: #477dca;
+$dark-gray: RGBA(246, 246, 246, 1);
+$medium-gray: #999;
+$light-gray: #ddd;
+$very-light-gray: #fafafa;
+
+$base-font-family: $helvetica;
+$base-font-color: $dark-gray;
+$base-background-color: $very-light-gray;
+
+body {
+  font-family: $base-font-family;
+  background-color: $base-background-color;
+  color: $base-font-color;
+  background-image: url("/img/rock.jpeg");
+}
+@media all and (min-width: 1182px) {
+  .logo-img {
+    position: absolute;
+    margin: auto;
+    background-repeat: none;
+    left: 0; 
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+ }
+ .link-cont {
+  width: 75%;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+}
+ .menu-portfolio,
+ .menu-about {
+  max-height: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  overflow: hidden;
+  color: $base-font-color;
+  background-color: RGBA(95, 108, 117, .9);
+  z-index: 1;
+  font-size: 80%;
+  padding: 0;
+}
+.menu-contact {
+  max-height: 0px;
+  text-align: center;
+  overflow: hidden;
+  color: $base-font-color;
+  background-color: RGBA(95, 108, 117, .9);
+  z-index: 1;
+  font-size: 80%;
+  padding: 0;
+}
+.portfolio-caps {
+  height: 350px;
+}
+.is-active {
+  max-height: 15000px;
+  padding-top: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 15px;
+  margin-left: 40%;
+  margin-top: 100px;
+  width: 70%;
+}
+.toplink {
+    margin-top: 30px;
+    height: 40px;
+    font-size: 20px;
+    background-color: RGBA(21, 71, 83, 1);
+    color: $base-font-color;
+    border-width: 0;
+    border-radius: 6px;
+    width: 33%;
+ }
+ .toplink:hover {
+    background-color: RGBA(57, 201, 237, 1);
+    text-decoration: underline; 
+ }
+ .close {
+   background-color: RGBA(246, 246, 246, 0);
+   margin-left: 46%;
+   padding-top: 20px;
+   border-width: 0;
+   border: 0;
+   display: block;
+ }
+ .dropdown-holder { 
+  transition: max-height 1000ms ease-in-out;
+  text-align: center;
+  width: 60%;
+  border-radius: 5px;
+}
+.beneath {
+  z-index: -1;
+  position: fixed;
+  margin-top: 0;
+}
+.myself {
+  padding-top: 5px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.profile {
+  display: block;
+  max-width: 150px;
+  margin: 0 auto 30px;
+  border-radius: 100%;
+}
+i {
+  text-decoration: none;
+  color: RGBA(246, 246, 246, 1);
+  margin-left: 2px;
+  margin-right: 2px;
+  width: 50px;
+  height: 50px;
+}
+.resume-link {
+  margin-top: 20px;
+  text-decoration: none;
+  text-align: center;
+  height: 50px;
+  width: 250px;
+  color: RGBA(200, 201, 186, 1);
+  background-color: RGBA(51, 51, 51, 1);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  border-color: black;
+  }
+  footer {
+    position: relative;
+    top: 85%;
+    left: 45%;
+    right: 42%;
+    width: 150px;
+    margin-top: 40px;
+  }
+}
