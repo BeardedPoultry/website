@@ -17,19 +17,10 @@ $very-light-gray: #fafafa;
 $base-font-color: $dark-gray;
 $base-background-color: $very-light-gray;
 
-html { 
-  background: url("/img/rock.jpeg") no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
 
 body {
   font-family: $base-font-family;
-  background-color: $base-background-color;
   color: $base-font-color;
-  // background-image: url("/img/rock.jpeg");
 }
 a {
   text-decoration: none;
@@ -45,46 +36,3 @@ a:hover {
   color:#000; 
   overflow: auto;
   }
-//CSS settings for mobile pages *****************************
-//***********************************************************
-@media all and (max-width: 360px) {
-  
-  // .beneath {
-  //   z-index: -1;
-  //   position: fixed;
-  //   margin-top: 0;
-  // }
-  // .logo-img {
-  //   width: 350px;
-  //   height: 350px;
-  // }
-  // i {
-  //   text-decoration: none;
-  //   color: RGBA(51, 51, 51, 1);
-  //   margin-left: 2px;
-  //   margin-right: 2px;
-  //   width: 50px;
-  //   height: 50px;
-  // }
-  // .social-links {
-  //   margin-left: 70px;
-  // }
-  // .about-me {
-  //   text-align: center;
-  //   background-color: RGBA(230, 230, 230, .75);
-  //   width: 80%;
-  //   margin-left: 10%;
-  //   margin-right: 10%;
-  // }
-  // hr {
-  //   width: 80%;
-  // }
-  // .resume-link {
-  //   text-decoration: none;
-  //   margin-left: 70px;
-  //   color: RGBA(200, 201, 186, 1);
-  //   background-color: RGBA(51, 51, 51, 1);
-  //   padding: 3px;
-  //   border-radius: 5px;
-  // }
-}

@@ -1,6 +1,21 @@
 require.register("main", function(exports, require, module){
   'use strict';
 
+var amountScrolled = 1200;
+$(window).scroll(function () {
+  if ($(window).scrollTop() > amountScrolled) {
+    $('a.back-to-top').fadeIn('slow');
+  } else {
+    $('a.back-to-top').fadeOut('slow');
+  }
+});
+$('a.back-to-top').click(function () {
+  $('body, html').animate({
+    scrollTop: 0
+  }, 700);
+  return false;
+});
+
 (function () {
   'use strict';
 
@@ -9,9 +24,7 @@ require.register("main", function(exports, require, module){
 
     $('.show-portfolio').on('click', function (e) {
       $('.menu-portfolio').toggleClass('is-active');
-      $('#menu-portfolio').toggle('hide');
-      //   $('.is-active').easeInCubic({
-      // duration: 1000});
+      $('.menu-portfolio').effect("bounce", "slow");
     });
 
     $('.show-about').on('click', function (e) {
