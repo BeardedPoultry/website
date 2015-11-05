@@ -14,6 +14,7 @@ $base-background-color: $very-light-gray;
   font-family: $base-font-family;
   color: $base-font-color;
   background-image: url("/img/rock.jpeg");
+  overflow-y: hidden;
 }
   .logo-img {
     position: absolute;
@@ -53,16 +54,22 @@ $base-background-color: $very-light-gray;
   font-size: 80%;
   padding: 0;
 }
+.about {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.about-his {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
 .portfolio-cont {
   float: left;
   width: 60%;
 }
 .large {
   width: 100%;
-}
-
-.portfolio-caps {
-  height: 200px;
 }
 .is-active {
   max-height: 15000px;
@@ -72,23 +79,27 @@ $base-background-color: $very-light-gray;
   margin-right: 12.5%;
   margin-top: 50px;
   width: 75%;
+  box-shadow: 10px -10px 15px teal;
+  animation: slidein 3s linear 1s;
 }
 #cssSlider {
-  width: 640px;
-	height: 356px;
+  width: 850px;
+	height: 600px;
 	overflow: hidden;
 	border: 4px solid RGBA(255, 255, 255, 1);
   margin-top: 20px;
+  margin-left: 30px;
   margin-bottom: 40px;
   border-radius: 3px;
 }
 
 #sliderImages {
 	width : 4000px;
-	height: 356px;
+	height: 600px;
 	overflow: hidden;
 	/* animation duration: 16s : 5x ~3s display image + 5x ~0.2s slide */
-	animation: fade 10s infinite;
+	animation: slide 60s infinite;
+  animation-delay: 2s;
 	-moz-animation: slide 30s infinite;
 	-webkit-animation: slide 30s infinite;
 	-o-animation: slide 30s infinite;
@@ -96,19 +107,21 @@ $base-background-color: $very-light-gray;
 
 #sliderImages img {
 	float: left;
+  width: 850px;
+  height: 600px;
 }
 
 @keyframes slide{
 	0%{margin-left: 0px;}
-	17%{margin-left: 0px;}
-	20%{margin-left: -640px;}
-	37%{margin-left: -640px;}
-	40%{margin-left: -1280px;}
-	57%{margin-left: -1280px;}
-	60%{margin-left: -1920px;}
-	77%{margin-left: -1920px;}
-	80%{margin-left: -2560px;}
-	97%{margin-left: -2560px;}
+	10%{margin-left: -425px;}
+	20%{margin-left: -850px;}
+	30%{margin-left: -1200px;}
+	40%{margin-left: -1600px;}
+	50%{margin-left: -2000px;}
+	60%{margin-left: -2400px;}
+	70%{margin-left: -2800px;}
+	80%{margin-left: -3200px;}
+	90%{margin-left: -3600px;}
 	100%{margin-left: 0px;}
 }
 .toplink {
@@ -139,9 +152,9 @@ $base-background-color: $very-light-gray;
   width: 100%;
   border-radius: 5px;
 }
-.close {
-  display: inline-block;
-}
+// .close {
+//   display: inline-block;
+// }
 .beneath {
   z-index: -1;
   position: fixed;
@@ -178,6 +191,9 @@ i {
   padding-bottom: 10px;
   border-radius: 5px;
   border-color: black;
+  }
+  .back-to-top {
+    display: none;
   }
   footer {
     position: relative;
