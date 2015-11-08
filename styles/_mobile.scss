@@ -1,7 +1,10 @@
 @media all and (max-width: 420px) {
 	body {
 		width: 100%;
+		margin: 0;
 	}
+	
+	//styles for background color shift
 	.outer {
 		width: 100%;
 		height: 100%;
@@ -21,28 +24,85 @@
 	.logo-img {
 		display: none;
 	}
+	
+	
+	// images for portfolio 
+	#si_1,
+	#si_2,
+	#si_3 {
+		background-image: none;
+	}
+	.hidden-on {
+		text-align: center;
+	}
+	.port-div {
+		width: 90%;
+		padding-left: 20px;
+	}
+	.portfolio {
+		padding-top: 60px;
+	}
 	.link-cont {
-		margin-left: 20%;
+		background-color: RGBA(128, 128, 128, .7);
+		padding-left: 25%;
+		padding-bottom: 15px;
+		border-bottom-style: solid;
+		border-bottom-width: 5px;
+		border-bottom-color: RGBA(10, 10, 10, .3);
+		margin-top: -20px;
+		z-index: 100;
+		width: 100%;
+		position: fixed;
 	}
 	.toplink {
 		background-color:RGBA(21, 71, 84, 1);
 		border: none;
 		margin-top: 20px;
 	}
+	.profile {
+		padding-top: 20px;
+		width: 70%;
+		border-radius: 15%;
+	}
+	.slidehold {
+		margin-bottom: 75px;
+	}
+	
 	//About myself section styling 
-	.menu-about {
-		width: 100%;
+	.about {
+		width: 97%;
+		margin-left: -10px;
+		text-align: center;
+		background-color: RGBA(78, 78, 73, 1);
+		border-color: RGBA(246, 246, 246, 1);
+		border-width: 3px;
+		border-style: solid;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.abouthold {
+		border-radius: 15px;
+		border-radius: 15px;
+		border-bottom-right-radius: 15px;	
+		border-bottom-left-radius: 15px;	
+	}
+	.conthold {
+		text-align: center;
+	}
+	.social {
+		padding-top: 5px;
 	}
 	.back-to-top {
 		margin-left: 40%;
 	}
 	.fa-angle-up {
-		background-color: RGBA(78, 78, 73, 1);
+		background-color: RGBA(78, 78, 73, .5);
 		border-radius: 50%;
 		height: 50px;
 		width: 50px;
-		padding-left: 9px;
-		padding-bottom: 9px;
+		padding-left: 6px;
+		padding-bottom: 6px;
+		padding-top: -8px;
 		position: fixed;
 		// display: none;
 		right: 20px;

@@ -1,4 +1,4 @@
-var amountScrolled = 1200;
+var amountScrolled = 500;
 $(window).scroll(function() {
 	if ( $(window).scrollTop() > amountScrolled ) {
 		$('a.back-to-top').fadeIn('slow');
@@ -8,8 +8,22 @@ $(window).scroll(function() {
 });
 $('a.back-to-top').click(function() {
 	$('body, html').animate({
-		scrollTop: 0
-	}, 700);
+		scrollTop: 100
+	}, 500);
+	return false;
+});
+
+$('to-portfolio').click(function() {
+	$('body, html').animate({
+		scrollDown: 300
+	}, 500);
+	return false;
+});
+
+$('a.back-to-top').click(function() {
+	$('body, html').animate({
+		scrollTop: 100
+	}, 500);
 	return false;
 });
 

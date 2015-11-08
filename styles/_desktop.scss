@@ -14,7 +14,7 @@ $base-background-color: $very-light-gray;
   font-family: $base-font-family;
   color: $base-font-color;
   background-image: url("/img/rock.jpeg");
-  // overflow-y: hidden;
+  overflow-y: hidden;
 }
   .logo-img {
     position: absolute;
@@ -72,7 +72,7 @@ $base-background-color: $very-light-gray;
   width: 100%;
 }
 .is-active {
-  max-height: 15000px;
+  max-height: 1000px;
   padding-top: 25px;
   border-radius: 15px;
   margin-left: 12.5%;
@@ -104,6 +104,9 @@ $base-background-color: $very-light-gray;
 	-webkit-animation: slide 30s infinite;
 	-o-animation: slide 30s infinite;
 }
+.hidden-on {
+  display: none;
+}
 
 #sliderImages img {
 	float: left;
@@ -113,15 +116,9 @@ $base-background-color: $very-light-gray;
 
 @keyframes slide{
 	0%{margin-left: 0px;}
-	10%{margin-left: -425px;}
-	20%{margin-left: -850px;}
-	30%{margin-left: -1200px;}
-	40%{margin-left: -1600px;}
-	50%{margin-left: -2000px;}
-	60%{margin-left: -2400px;}
-	70%{margin-left: -2800px;}
-	80%{margin-left: -3200px;}
-	90%{margin-left: -3600px;}
+  25%{margin-left: 0px;}
+  50%{margin-left: -850px;}
+  75%{margin-left: -1700px;}
 	100%{margin-left: 0px;}
 }
 .toplink {
