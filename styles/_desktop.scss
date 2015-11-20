@@ -93,15 +93,13 @@ $base-background-color: $very-light-gray;
 	height: 600px;
 	overflow: hidden;
 	border: 4px solid RGBA(255, 255, 255, 1);
-  margin-top: 20px;
-  
-  margin-bottom: 40px;
+  padding-bottom: 15px;
   border-radius: 3px;
 }
 
 #sliderImages {
-	width : 4000px;
-	height: 600px;
+	width : 2400px;
+	height: 700px;
 	overflow: hidden;
 	/* animation duration: 16s : 5x ~3s display image + 5x ~0.2s slide */
 	animation: slide 60s infinite;
@@ -113,14 +111,14 @@ $base-background-color: $very-light-gray;
 @keyframes slide{
 	0%{margin-left: 0px;}
   25%{margin-left: 0px;}
-  50%{margin-left: -850px;}
-  75%{margin-left: -1700px;}
+  50%{margin-left: -800px;}
+  75%{margin-left: -1600px;}
 	100%{margin-left: 0px;}
 }
 #sliderImages img {
 	float: left;
-  width: 850px;
-  height: 600px;
+  width: 800px;
+  height: 625px;
 }
 
 .hidden-on {
@@ -145,6 +143,7 @@ $base-background-color: $very-light-gray;
  .close {
    background-color: RGBA(246, 246, 246, 0);
    margin-left: 46%;
+   margin-top: 20px;
    padding-top: 20px;
    border-width: 0;
    border: 0;
@@ -156,9 +155,9 @@ $base-background-color: $very-light-gray;
   width: 100%;
   border-radius: 5px;
 }
-// .close {
-//   display: inline-block;
-// }
+.close {
+  padding-top: 20px;
+}
 .beneath {
   z-index: -1;
   position: fixed;
