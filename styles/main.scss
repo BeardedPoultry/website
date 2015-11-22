@@ -18,10 +18,14 @@ $very-light-gray: #fafafa;
 $base-font-color: $dark-gray;
 $base-background-color: $very-light-gray;
 
-
 body {
   font-family: $base-font-family;
   color: $base-font-color;
+}
+.toplink {
+  border-width: 3px;
+  border-style: solid;
+  border-color: RGBA(241, 241, 218, 1);
 }
 a {
   text-decoration: none;
